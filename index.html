@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>COVID Visualization</title>
+  <title>COVID19 Visualization</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -37,7 +37,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one.column" style="margin-top: 10%">
+      <div class="one.column" style="margin-top: 5%">
         <h1 style="font-weight: 700;">COVID-19 case distribution in India</h1>
       </div>
       <br>
@@ -192,7 +192,13 @@
     <script>
 
         // set the dimensions and margins of the graph
-        var width = 430
+        if (screen.width < 960) {
+        var width = 410
+        }
+        else {
+        var width = 1024
+        }
+        // var width = 420
         var height = 460
         
         // append the svg object to the body of the page
@@ -302,7 +308,12 @@
         
         </script>
 
+<br>
+
 <button onClick="window.location.reload();">Reset</button>
+
+<br>
+<br>
 
 
 <!-- End Document
