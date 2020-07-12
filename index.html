@@ -243,7 +243,7 @@
           }
           var mousemove = function(d) {
             Tooltip
-              .html('<u>' + d.State + '</u>' + "<br>" + (1*d.Confirmed).toLocaleString('hi') + " Confirmed Cases")
+              .html('<u>' + d.State + '</u>' + "<br>" + (1*d.Confirmed).toLocaleString('hi') + " Confirmed Cases" + "<br>" + (1*d.Recovered).toLocaleString('hi') + " Recovered" + "<br>" + (1*d.Deaths).toLocaleString('hi') + " Deaths")
               .style("left", (d3.mouse(this)[0]+20) + "px")
               .style("top", (d3.mouse(this)[1]) + "px")
           }
