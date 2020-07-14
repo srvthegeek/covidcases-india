@@ -44,8 +44,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>COVID19 Visualization</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A Visualization">
+  <meta name="author" content="Sai Ram Ved V">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -81,7 +81,7 @@
       <!-- <br> -->
       <div class="three.columns">
         <div class="one-third column value">
-        <a href="index.html">HOME</a>
+        <a href="index.html" style="text-decoration: underline;">HOME</a>
         </div>
         <div class="one-third column value">
             <a href="about.html">ABOUT</a>
@@ -247,8 +247,25 @@
 
 <iframe src="another.html" title="Worldwide" width="100%" height="780px" style="border:0px solid white;"></iframe>
 
+<div style="padding: 5%;">
+    <h6 id="date"></h6>
+    <h6>*The data across both visualizations might vary slightly as the datasets for 'India' and 'Worldwide' are different and the time at which they are updated can also vary.</h6>
+</div>
+
+<!-- <div><h6 id="date"></h6></div> -->
+
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = "Last updated on: " + (d - 1) + "/" + m + "/" + y;
+</script>
 
 
+<footer>
+<a href="https://madewithlove.org.in" target="_blank" style="padding: 2%;">Made with <span style="color: #e74c3c">&hearts;</span> in India</a>
+</footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

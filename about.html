@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170196424-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170196424-2');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script>
+    barba.init({
+      // ...
+    })
+</script>
+
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>COVID19 Visualization</title>
+  <meta name="description" content="A Visualization">
+  <meta name="author" content="Sai Ram Ved V">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,400;1,700;1,900&display=swap');
+  </style>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one.column" style="margin-top: 2%">
+        <h1 style="font-weight: 700;">COVID-19 Case Distribution</h1>
+      </div>
+      <!-- <br> -->
+      <div class="three.columns">
+        <div class="one-third column value">
+        <a href="index.html">HOME</a>
+        </div>
+        <div class="one-third column value">
+            <a href="about.html" style="text-decoration: underline;">ABOUT</a>
+        </div>
+        <div class="one-third column value">
+            <a href="links.html">LINKS</a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <br>
+
+<div style="padding: 5%;">
+    <h5 style="text-align: left;">This project is a visualization of the COVID-19 cases in India as well as around the world. Having such a representation could be useful to gain quick insights about the current situation and reveal relevant patterns.
+      A major inspiration that helped start this project is the coronavirus infographic datapack published by the team at <a href="https://informationisbeautiful.net/">informationisbeautiful.net</a>.
+      Many infographics around the internet portray the situation in various creative ways and this one is a minimalist take on them. 
+      The dataset for the 'India' visualization is sourced from COVID19-India API which is a volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India.
+      The dataset for the 'Worldwide' visualization is sourced from covid_19_jhu_data_web_scrap_and_cleaning on GitHub. Their data sources include worldometers and Johns Hopkins University. Both these datasets are being updated frequently which in-turn updates the visualization here.
+      Links to all sources can be found in the <a href="links.html">'Links'</a> page.</h5>
+</div>
+
+<!-- <div><h6 id="date"></h6></div> -->
+
+<footer>
+  <a href="https://madewithlove.org.in" target="_blank" style="padding: 2%;">Made with <span style="color: #e74c3c">&hearts;</span> in India</a>
+</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
