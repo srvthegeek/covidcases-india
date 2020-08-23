@@ -144,7 +144,7 @@
         d3.csv("	https://api.covid19india.org/csv/latest/state_wise.csv", function(data) {
         
           // Filter a bit the data -> more than 1 million inhabitants
-          data = data.filter(function(d){ return (d.Confirmed > -1) })
+          data = data.filter(function(d){ return (d.Confirmed > -1  && d.State != 'Total') })
         
           // Color palette for continents?
           var color = d3.scaleOrdinal()
