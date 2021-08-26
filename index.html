@@ -141,7 +141,7 @@
             .attr("height", height)
         
         // Read data
-        d3.csv("https://api.covid19india.org/csv/latest/state_wise.csv", function(data) {
+        d3.csv("https://raw.githubusercontent.com/srvthegeek/covidcases-india/master/state_wise.csv", function(data) {
         
           // Filter a bit the data -> more than 1 million inhabitants
           data = data.filter(function(d){ return (d.Confirmed > -1  && d.State != 'Total') })
