@@ -132,7 +132,7 @@
         var width = 1024
         }
         // var width = 420
-        var height = 460
+        var height = 560
         
         // append the svg object to the body of the page
         var svg = d3.select("#my_dataviz")
@@ -144,7 +144,7 @@
         d3.csv("https://raw.githubusercontent.com/srvthegeek/covidcases-india/master/state_wise.csv", function(data) {
         
           // Filter a bit the data -> more than 1 million inhabitants
-          data = data.filter(function(d){ return (d.Confirmed > -1  && d.State != 'Total') })
+          data = data.filter(function(d){ return (d.Confirmed > 1  && d.State != 'Total') })
         
           // Color palette for continents?
           var color = d3.scaleOrdinal()
@@ -154,7 +154,7 @@
           // Size scale for countries
           var size = d3.scaleLinear()
             .domain([0, 1734040])
-            .range([10,80])  // circle will be between 7 and 55 px wide
+            .range([3,40])  // circle will be between 7 and 55 px wide
         
           // create a tooltip
           var Tooltip = d3.select("#my_dataviz")
